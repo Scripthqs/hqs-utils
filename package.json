@@ -1,0 +1,30 @@
+{
+  "name": "hqs-utils",
+  "version": "1.0.3",
+  "description": "",
+  "keywords": [
+    "utils",
+    "array",
+    "object",
+    "function",
+    "string",
+    "axios",
+    "event-bus",
+    "pub-sub",
+    "promise"
+  ],
+  "main": "./dist/hqs-utils.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:watch": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
