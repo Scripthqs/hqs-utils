@@ -25,6 +25,11 @@
 
         console.log(utils);
         utils.test()
+        const arr = [1, 2, 3, 4, 2077, 5, 1024];
+        const result = utils.some(arr, (item, index) => {
+            return item > 1;
+        });
+        console.log(result);
     </script>
 </body>
 
