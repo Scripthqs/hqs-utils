@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>深拷贝测试</title>
-    <script src="../../src/object/clone.js"></script>
+    <!-- <script src="../../src/object/clone.js"></script> -->
 </head>
+
 <body>
     <script>
+        import { deepClone1, deepClone2, deepClone3, deepClone4 } from '../../src/object/clone.js'
+
         const obj = {
             a: 1,
             b: ['e', 'f', 'g'],
             c: { h: 20 },
             //JSON不能克隆方法
-            d: function(){}
+            d: function () { }
         };
-        
+
         //4. 循环效率问题优化
         obj.b.push(obj.c);
         obj.c.j = obj.b;

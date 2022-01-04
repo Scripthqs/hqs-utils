@@ -20,3 +20,4 @@ export function myInstanceOf (obj, Fn) {
     }
     return false
 }
+

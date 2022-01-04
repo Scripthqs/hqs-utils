@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>合并对象测试</title>
-    <script src="../../src/object/mergeObject.js"></script>
+    <!-- <script src="../../src/object/mergeObject.js"></script> -->
 </head>
+
 <body>
-    <script>
+    <script type="module">
+        import { mergeObject } from '../../src/object/mergeObject.js'
         const object = {
             a: [{ x: 2 }, { y: 4 }],
             b: 1,

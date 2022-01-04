@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>事件绑定</title>
-    <script src="../../src/event-bind/index.js"></script>
+    <!-- <script src="../../src/event-bind/index.js"></script> -->
 </head>
+
 <body>
     <ul id='items'>
         <li>AAAA</li>
@@ -14,12 +16,16 @@
         <li>DDDD</li>
         <div>EEEE</div>
     </ul>
-    <script>
+    <script type="module">
+
+        import { addEventListener } from '../../src/event-bind/index.js'
+
         //调用函数绑定事件
-        addEventListener('#items', 'click', function(e){
+        addEventListener('#items', 'click', function (e) {
             //输出标签文本
             console.log(this.innerHTML);
         }, 'li');
     </script>
 </body>
+
 </html>

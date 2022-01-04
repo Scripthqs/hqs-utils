@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>字符串测试</title>
-    <script src='../../src/string/index.js'></script>
+    <!-- <script src='../../src/string/index.js'></script> -->
 </head>
+
 <body>
-    <script>
+    <script type="module">
+        import { reverseString, palindrome, truncate, toLine } from '../../src/string/index.js'
         //声明字符串
         let str = 'iloveyou';
         let str2 = 'lol';
-        let str3 = '『尚大出品』大厂学院 - 个性化定制专题课程，自由选学更灵活'
+        let str3 = 'abcdefghijklmn'
 
         //测试
         //测试字符串翻转
@@ -19,7 +22,16 @@
         //测试是否为回文
         console.log(palindrome(str2));
         //测试字符串截断        
-        console.log(truncate(str3, 10));
+        console.log(truncate(str3, 5));
+
+        //驼峰转下划线
+        // function toLine(name) {
+        //     return name.replace(/([A-Z])/g, '_$1').toLowerCase()
+        // }
+        let b = 'aBdaNf';
+        console.log(b)
+        console.log(toLine(b));
     </script>
 </body>
+
 </html>
